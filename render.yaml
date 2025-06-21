@@ -2,5 +2,5 @@ services:
   - type: web
     name: market-eye-bot
     env: python
-    buildCommand: "pip install -r requirements.txt"
+buildCommand: "./build.sh"
     startCommand: "python3 market_news_bot.py"
