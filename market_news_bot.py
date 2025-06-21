@@ -9,6 +9,22 @@ from telegram import Bot
 from apscheduler.schedulers.blocking import BlockingScheduler
 from datetime import datetime
 import pytz
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+try:
+    import requests
+except ImportError:
+    install("requests")
+
+try:
+    import feedparser
+except ImportError:
+    install("feedparser")
+
 
 # === LOAD CONFIG ===
 with open("telegram_bot_config.json", "r") as f:
