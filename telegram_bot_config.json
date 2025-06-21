@@ -1,0 +1,15 @@
+{
+  "BOT_TOKEN": "7290109387:AAHxc9_0s7qyBkR64ncf5uzzqD2Q2unfNWk",
+  "TIMEZONE": "GMT+1",
+  "POST_TIMES": [
+    "08:00",
+    "13:00",
+    "19:00"
+  ],
+  "NEWS_SOURCES": [
+    "GNews API",
+    "Bloomberg RSS",
+    "CNBC RSS"
+  ],
+  "CHARTS_ENABLED": true
+}
